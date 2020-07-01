@@ -143,6 +143,9 @@
                     <img class="solutions-graphic" data-aos="fade-left" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1500" src="https://katapult-staticfiles.s3.amazonaws.com/static/main/walkthrough.gif">
                 </div>
             </div>
+            <div class="center-row-flex">
+                <div id="submitbtn" onclick="topFunction()" class="nav-button" style="background-color: #00c2cc; border: none; width: 13vw; text-align: center; margin-top: 2vh">Contact</div>
+            </div>
             <footer class="space-row-flex" style="color: white; text-align: left; border-top: 3px solid grey; padding: 4vh 3vh; margin-top: 15vh">
                 Katapult LLC., 2020
                 <a href="mailto:lkronman10@stuy.edu">Contact us</a>
@@ -161,6 +164,11 @@
             document.getElementById("flowchart1").style.display = "none"
             document.getElementById("btn2").style.backgroundColor = "#0a207a"
             document.getElementById("btn1").style.backgroundColor = "white"
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
         document.querySelector('#submitbtn').onclick = function() {
             var validity = true
