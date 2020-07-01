@@ -3,14 +3,14 @@
 <html lang="en">
 
 <head>
-    <title>Katapult: Making OOH Easy</title>
+    <title>Katapult: Making OOH Advertising Easy</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- tags for creating tab icon -->
-     
+
     <!-- Load in css -->
     <link href="https://katapult-staticfiles.s3.amazonaws.com/static/main/styles.css" rel="stylesheet" />
     <script src="https://katapult-staticfiles.s3.amazonaws.com/static/main/particles.min.js"></script>
@@ -177,7 +177,7 @@
                 request.onload = function() {
                     print(request.body)
                     if (request.status == 200) {
-                        document.getElementById("title").innerHTML = "Success!"
+                        document.getElementById("title").innerHTML = "Thank you for submitting! You will hear back from us soon."
                     } else {
                         document.getElementById("title").innerHTML = "Failed. Try again."
                     }
