@@ -21,7 +21,7 @@
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-<body>
+<body style="overflow-x: hidden;background-color: #084A75;">
     <header class="justify start-row-flex">
         <div class="start-row-flex">
             <a href="/" style="color: black; text-decoration: none" class="start-row-flex">
@@ -54,6 +54,43 @@
                     <div id="submitbtn" class="nav-button" style="background-color: #00c2cc; border: none; width: 13vw; text-align: center; margin-top: 2vh">REQUEST</div>
                 </div>
             </form>
+        </div>
+        <div class="space-evenly-row-flex" style="margin: 10vh 0;">
+            <div style="height: auto" class="home-title-col column-center-flex" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <h2 class="splash-title">
+                    OOH advertising is advertising that reaches consumers while they are outside their home. It is the oldest, most versatile, and most cost-effective way of advertising, especially in the modern world.
+                </h2>
+            </div>
+            <div class="column-center-flex">
+                <img class="solutions-graphic" data-aos="fade-left" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1500" src="ads.gif">
+            </div>
+        </div>
+        <div class="space-evenly-row-flex" style="margin: 10vh 0;">
+            <div class="column-center-flex">
+                <img class="solutions-graphic" data-aos="fade-left" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1500" src="ads.gif">
+            </div>
+            <div style="height: auto" class="home-title-col column-center-flex" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <h2 class="splash-title">
+                    Outdoor advertising is more valuable today than ever…
+                </h2>
+                <ol class="splash-title">
+                    <li>
+                        <h5 class="splash-title">
+                            Demand for OOH advertising is increasing very rapidly, and the current billboard agencies can’t keep up at all.
+                        </h5>
+                    </li>
+                    <li>
+                        <h5 class="splash-title">
+                            New advancements in technology have made outdoor advertisements effective at any size, so your property does not need to have a large open space. New technology also has made adding an advertising space to your property very simple.
+                        </h5>
+                    </li>
+                    <li>
+                        <h5 class="splash-title">
+                            COVID-19 has created a new demand for advertising among many businesses. OOH advertising is increasing in value as businesses reopen.
+                        </h5>
+                    </li>
+                </ol>
+            </div>
         </div>
         <div class="center-row-flex">
             <h2 class="splash-title" id="title" style="width: auto; font-weight: 200;">
@@ -132,15 +169,12 @@
             </div>
             <div class="space-evenly-row-flex" style="margin: 10vh 0;">
                 <div style="height: auto" class="home-title-col column-center-flex" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
-                    <h1 class="splash-title">
-                        Launching in the near future...
-                    </h1>
                     <h2 class="splash-title">
-                        Here is a sneak peak.
+                        OOH advertising is advertising that reaches consumers while they are outside their home. It is the oldest, most versatile, and most cost-effective way of advertising, especially in the modern world.
                     </h2>
                 </div>
                 <div class="column-center-flex">
-                    <img class="solutions-graphic" data-aos="fade-left" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1500" src="https://katapult-staticfiles.s3.amazonaws.com/static/main/walkthrough.gif">
+                    <img class="solutions-graphic" data-aos="fade-left" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1500" src="ads.gif">
                 </div>
             </div>
             <div class="center-row-flex">
@@ -186,7 +220,6 @@
                 var request = new XMLHttpRequest()
                 request.open("POST", "https://api.tracery.us/api/katapult/interest/")
                 request.onload = function() {
-                    print(request.body)
                     if (request.status == 200) {
                         document.getElementById("title").innerHTML = "Thank you for submitting! You will hear back from us soon."
                     } else {
